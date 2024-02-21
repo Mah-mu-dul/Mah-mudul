@@ -5,6 +5,7 @@ import Projects from '../../components/Projects';
 import Skills from '../../components/Skills';
 import Intro from '../../components/Intro';
 import About_me from '../../components/About_me';
+import Education_Experience from '../../components/Education_Experience';
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('');
@@ -59,16 +60,18 @@ export default function Home() {
         </ul>
       </nav>
       <main className="lg:px-52 md:px-20 px-5">
-        <section id="Home" className=" mt-16 flex items-center justify-center text-white text-4xl">
+        <section id="Home" className=" mt-16 pt-10 flex items-center justify-center text-white text-4xl">
           <Intro />
         </section>
-        <section id="About" className="min-h-screen flex items-center justify-center text-white text-4xl">
+        <section id="About" className=" flex items-center justify-center text-white text-4xl">
           <About_me />
         </section>
-        <section id="Skills" className="min-h-screen flex items-center justify-center text-white text-4xl">
+        <section id="Skills" className="my-20  flex items-center justify-center text-white text-4xl">
           <Skills />
         </section>
-        <section id="experience" className="min-h-screen flex items-center justify-center text-white text-4xl">Section 4</section>
+        <section id="experience" className=" my-20  flex items-center justify-center text-white text-4xl">
+          <Education_Experience />
+        </section>
         <section id="Portfolio" className="min-h-screen  text-white text-4xl">
           <Projects />
         </section>
