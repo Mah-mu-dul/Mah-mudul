@@ -25,7 +25,6 @@ const About_me = () => {
             <div className="mt-10">
                 <h2 className='text-center'>what I do</h2>
                 <div className="">
-                    <Education_card />
                     <ServiceCards />
                 </div>
             </div>

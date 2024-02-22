@@ -9,7 +9,7 @@ import { IoMdMail } from "react-icons/io";
 
 const Intro = () => {
     return (
-        <div className='w-full flex md:flex-row-reverse justify-between flex-wrap sm:mt-16 md:mt-0 text-center md:text-left'>
+        <div className='w-full flex md:flex-row-reverse justify-evenly flex-wrap sm:mt-16 md:mt-0 text-center md:text-left'>
 
             <div className="avatar w-full md:w-fit">
                 <div className="w-72 h-72 mx-auto rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -27,7 +27,6 @@ const Intro = () => {
                     <p className='w-[300px] text-sm flex items-center gap-3 my-3'><span className='text-xl'><FaPhone /></span>+8801571382855</p>
                     <p className='w-[300px] text-sm flex items-center gap-3 my-3'><span className='text-xl'><FaLocationDot /></span>37, Pollsatnd, New York, United State</p>
                     <p className='w-[300px] text-sm flex items-center gap-3 my-3'></p>
-
                 </div>
                 <div className="mx-auto my-10 flex justify-evenly gap-5 text-[25px] w-full max-w-[300px]">
                     <FaFacebook />
