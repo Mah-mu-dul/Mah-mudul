@@ -12,7 +12,7 @@ import Contact from '../../components/Contact';
 export default function Home() {
 
   return (
-    <div className='bg-[#100e17] text-white max-w-[1500px] mx-auto pb-20'>
+    <div className='bg-[#100e17] w-full text-white max-w-[1500px] mx-auto pb-20'>
       <Head>
         <title>Scrolling Navbar</title>
         <link rel="icon" href="/favicon.ico" />

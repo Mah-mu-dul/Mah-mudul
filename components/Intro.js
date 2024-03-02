@@ -14,7 +14,9 @@ const Intro = () => {
             <div className="avatar w-full md:w-fit">
                 <div className="w-72 h-72 mx-auto rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
 
-                    <img className='' src="https://i.ibb.co/30VsGP2/2-48mb.jpg" />
+                    <div className="flex mt-[-30px]">
+                        <img className='' src="https://i.ibb.co/Q9BF98F/tranparent-bd.png" />
+                    </div>
                 </div>
             </div>
             <div className="md:w-1/2 w-full ">

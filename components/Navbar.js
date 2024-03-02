@@ -53,7 +53,7 @@ const Navbar = () => {
             </label>
             <input type="checkbox" id="Navbar" className="modal-toggle" />
             <div className="modal modal-top rounded pt-16" role="dialog" >
-                <div className="modal-box ml-5  left-0 w-fit">
+                <div className="modal-box ml-5 bg-[rgb(16 14 23/var(--tw-bg-opacity))]  left-0 w-fit">
                     {
                         navitems
                     }

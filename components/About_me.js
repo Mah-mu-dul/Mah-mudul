@@ -11,9 +11,9 @@ const About_me = () => {
     return (
         <div className="">
             <div className='flex flex-wrap justify-evenly items-center'>
-                <div className="md:w-1/2 w-full px-10">
+                {/* <div className="md:w-1/2 w-full px-10">
                     <Image className='my-10' src={img} alt="Profile Image" />
-                </div>
+                </div> */}
 
                 <div className="md:w-1/2 w-full text-center md:text-left">
                     <h1 className='font-medium text-[30px]'>About Me</h1>
