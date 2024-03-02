@@ -15,7 +15,7 @@ const About_me = () => {
                     <Image className='my-10' src={img} alt="Profile Image" />
                 </div> */}
 
-                <div className="md:w-1/2 w-full text-center md:text-left">
+                <div className=" w-full text-center md:text-left">
                     <h1 className='font-medium text-[30px]'>About Me</h1>
                     <p className='lg:text-[25px] text-sm leading-relaxed'>Hello, I’m a Patrick, web-developer based on Paris. I have rich experience in web site design & building and customization. Also I am good at</p>
                     <Skill_btn />
