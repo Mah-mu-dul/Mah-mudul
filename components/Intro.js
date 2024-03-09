@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { FaPhone, FaLocationDot, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa6";
-
+import { SiCodeforces } from "react-icons/si";
 
 import { IoMdMail } from "react-icons/io";
 
@@ -33,6 +33,8 @@ const Intro = () => {
                     <a href="https://www.facebook.com/mahhasanbd" target="_blank"><FaFacebook /></a>
                     <a href="https://github.com/Mah-mu-dul" target="_blank"><FaGithub /></a>
                     <a href="https://www.linkedin.com/in/Mah-mu-dul/" target="_blank"><FaLinkedin /></a>
+                    <a href='https://codeforces.com/profile/Mahmudul11' target="_blank"><SiCodeforces /></a>
+
                 </div>
 
             </div>
