@@ -4,14 +4,14 @@ const Experience_card = () => {
     const experiences = [
         {
             degree: "UI/UX Designer ",
-            institute: "IronSketch",
-            period: "2005-2008",
+            institute: "Fiverr",
+            period: "2022 - Current",
             Responsibilitys: ["Validate CSS", "Project Management"]
         },
         {
             degree: "Web Design and Development ",
-            institute: "Programming Hero",
-            period: "2005-2008",
+            institute: "Fiverr",
+            period: "2022 - Current",
             Responsibilitys: ["React JS", "Tailwind css"]
         },
 

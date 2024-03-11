@@ -19,7 +19,11 @@ const About_me = () => {
                     <h1 className='font-medium text-[30px]'>About Me</h1>
                     <p className='lg:text-[25px] text-sm leading-relaxed'>Hey there! I&apos;m Mahmudul Hasan, a MERN stack developer, web designer, and graphic designer. Specializing in React, Express, MongoDB, and Node.js, I create dynamic websites with seamless user experiences. From full-stack applications to captivating frontend designs, I blend creativity and technical expertise. Let&apos;s bring your vision to life! Connect with me today, and let&apos;s craft something extraordinary together.</p>
                     <Skill_btn />
-                    <button className='btn btn-primary text-white text-xl rounded-lg px-8 my-10 font-bold'>Download CV <FaDownload /></button>
+                    {/* <a href="/path/to/your-cv.pdf" download>
+                        <button className='btn btn-primary text-white text-xl rounded-lg px-8 my-10 font-bold'>
+                            Download CV <FaDownload />
+                        </button>
+                    </a> */}
                 </div>
             </div>
             <div className="mt-10">

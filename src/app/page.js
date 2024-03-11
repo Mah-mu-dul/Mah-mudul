@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <main className="lg:px-30 md:px-20 px-5">
-        <section id="Home" className="lg:pt-16 pt-10 flex items-center justify-center text-white text-4xl">
+        <section id="Home" className="lg:pt-16 md:pt-10 flex items-center justify-center text-white text-4xl">
           <Intro />
         </section>
         <section id="About" className=" flex items-center justify-center text-white text-4xl">

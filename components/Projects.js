@@ -39,34 +39,7 @@ const Projects = () => {
             liveLink: "https://warehouse-of-books.web.app/",
             img: "https://i.ibb.co/KVQR1RX/creative-composition-world-book-day-23-2148883765.jpg"
         },
-        // {
-        //     h1: "Creative Design",
-        //     h2: "Photography",
-        //     src: "",
-        //     liveLink: "",
-        //     img: "https://maha-cv-resume-bootstrap.vercel.app/assets/images/portfolio/g8.png"
-        // },
-        // {
-        //     h1: "Creative Design",
-        //     h2: "Photography",
-        //     src: "",
-        //     liveLink: "",
-        //     img: "https://maha-cv-resume-bootstrap.vercel.app/assets/images/portfolio/g3.png"
-        // },
-        // {
-        //     h1: "Creative Design",
-        //     h2: "Photography",
-        //     src: "",
-        //     liveLink: "",
-        //     img: "https://maha-cv-resume-bootstrap.vercel.app/assets/images/portfolio/g6.png"
-        // },
-        // {
-        //     h1: "Creative Design",
-        //     h2: "Photography",
-        //     src: "",
-        //     liveLink: "",
-        //     img: "https://maha-cv-resume-bootstrap.vercel.app/assets/images/portfolio/g7.jpg"
-        // },
+
     ]
     return (
         <div className="">
@@ -74,7 +47,7 @@ const Projects = () => {
             <div className='pt-10 p-5 space-y-8 space-x-0 lg:columns-3 md:columns-3 flex flex-wrap justify-evenly md:block w-fit  mx-auto '>
                 {
                     projects.map((project, i) => (
-                        <div key={i} className="mx-auto relative group overflow-hidden h-fit w-fit">
+                        <div key={i} className="mx-auto  relative group overflow-hidden h-fit w-fit">
                             <img className='rounded-md w-full md:w-[200px] lg:w-[340px] h-auto ' src={project.img} alt="sds" />
                             <div className="absolute mx-auto text-sm inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <div className="relative">

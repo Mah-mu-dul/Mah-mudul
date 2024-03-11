@@ -13,11 +13,11 @@ const btns = [
     "Node JS",
     "Illustrator",
     "Fussion 360",
-    "Visual Studio"
+    "Visual Studio",
 ]
 const Skill_btn = () => {
     return (
-        <div className='flex flex-wrap gap-5 mt-8'>
+        <div className='flex flex-wrap justify-between lg:justify-start gap-2 mt-8'>
             {
                 btns.map((btn, i) => {
                     return (

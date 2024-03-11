@@ -40,7 +40,7 @@ const Contact = () => {
         e.preventDefault();
 
         console.log(formData);
-        const serviceID = '8etBbEwFFpHd9D4mg';
+        const serviceID = 'service_wove9qh';
         const templateID = 'template_k1u9jno';
 
         try {
@@ -66,9 +66,9 @@ const Contact = () => {
 
             </div>
             <form onSubmit={handleSubmit} className='flex mx-auto justify-between  flex-wrap w-full md:w-1/2 gap-5 mt-10'>
-                <input type="text" placeholder="Your Good Name" name="name" value={formData.name} onChange={handleChange} className="input bg-transparent input-bordered input-info w-full " />
-                <input placeholder="Email" type="email" name="email" value={formData.email} onChange={handleChange} className="input bg-transparent input-bordered input-info w-full " />
-                <textarea placeholder="Your Message" name="message" value={formData.message} onChange={handleChange} className="textarea min-h-[200px] bg-transparent textarea-info textarea-bordered text w-full max "></textarea>
+                <input required type="text" placeholder="Your Good Name" name="name" value={formData.name} onChange={handleChange} className="input bg-transparent input-bordered input-info w-full " />
+                <input required placeholder="Email" type="email" name="email" value={formData.email} onChange={handleChange} className="input bg-transparent input-bordered input-info w-full " />
+                <textarea required placeholder="Your Message" name="message" value={formData.message} onChange={handleChange} className="textarea min-h-[200px] bg-transparent textarea-info textarea-bordered text w-full max "></textarea>
                 <input type="submit" className="btn btn-primary w-full" />
 
             </form>

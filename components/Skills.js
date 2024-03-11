@@ -57,7 +57,7 @@ const Professional_skills = [
 const Skills = () => {
     return (
         <div className='w-full flex flex-wrap  justify-between'>
-            <div className="w-96 mx-auto">
+            <div className="w-full md:w-[40%] mx-auto">
                 <h1 className='text-center my-5 font-semibold'>Technical Skills</h1>
 
                 {
@@ -74,7 +74,7 @@ const Skills = () => {
                     })
                 }
             </div>
-            <div className="w-[26rem] mx-auto">
+            <div className="w-full md:w-[50%] lg:w-[26rem] mx-auto">
                 <h1 className='text-center my-5 font-semibold'>Professional Skills</h1>
                 <div className=" grid w-full grid-cols-2">
                     {

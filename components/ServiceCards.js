@@ -38,7 +38,7 @@ const ServiceCards = () => {
             {
                 services.map((item, i) => {
                     return (
-                        < div key={i} className="w-[270px] p-5 h-[300px] m-3 bg-[#202026] rounded-md shadow-[#000_0px_25px_50px_-12px]" >
+                        < div key={i} className="w-full md:w-[270px] p-5 h-[300px] m-3 bg-[#202026] rounded-md shadow-[#000_0px_25px_50px_-12px]" >
                             <span className={item.color}> {item.logo}</span>
                             <h2 className='my-2 text-[25px]'>{item.title}</h2>
                             <p className='text-sm text-justify'>{item.description}</p>
