@@ -2,7 +2,7 @@ import React from 'react';
 const ContactCard = ({ data }) => {
     return (
         <a className='md:w-[290px] w-full' href={data.title == "Email" ? "mailto:work.mahmudulhasan@gmail.com" : "tel:+8801571382855"} >
-            < div className="btn flex flex-col h-fit text-center  p-5  bg-[#202026] rounded-md shadow-[0_20px_50px_rgba(0,0,0)]" >
+            < div className="btn flex flex-col h-fit text-center  p-5  bg-[#202026] text-gray-100 rounded-md shadow-[0_20px_50px_rgba(0,0,0)]" >
                 <div className="w-fit text-lg mx-auto p-8 border border-blue-400  rounded-full mb-5">
                     {
                         data.logo

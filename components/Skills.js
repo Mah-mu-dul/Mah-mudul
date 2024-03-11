@@ -83,7 +83,7 @@ const Skills = () => {
                             return (
                                 <div key={i} className="lg:w-full md:w-3/4 text-sm sm:w-full py-5 mx-auto flex flex-col items-center">
 
-                                    <div className="radial-progress text-primary" style={{ "--value": skill.percentage }} role="progressbar">{skill.percentage}%</div>
+                                    <div className="radial-progress text-blue-400" style={{ "--value": skill.percentage }} role="progressbar">{skill.percentage}%</div>
                                     <p className='my-2'>{skill.name}</p>
                                 </div>
                             )

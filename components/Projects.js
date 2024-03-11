@@ -44,10 +44,10 @@ const Projects = () => {
     return (
         <div className="">
             <h1 className='text-center font-semibold'>Recent Projects</h1>
-            <div className='pt-10 p-5 space-y-8 space-x-0 lg:columns-3 md:columns-3 flex flex-wrap justify-evenly md:block w-fit  mx-auto '>
+            <div className='pt-10 p-5 space-y-8 space-x-0 lg:columns-3 md:columns-2 flex flex-wrap justify-evenly md:block w-fit  mx-auto '>
                 {
                     projects.map((project, i) => (
-                        <div key={i} className="mx-auto  relative group overflow-hidden h-fit w-fit">
+                        <div key={i} className="mx-auto  relative group overflow-hidden h-fit w-full md:w-fit">
                             <img className='rounded-md w-full md:w-[200px] lg:w-[340px] h-auto ' src={project.img} alt="sds" />
                             <div className="absolute mx-auto text-sm inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <div className="relative">

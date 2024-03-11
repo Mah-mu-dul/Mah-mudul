@@ -48,12 +48,12 @@ const Navbar = () => {
     </>
     return (
         <nav className=" sticky top-0 left-0 w-full md:bg-[#828088d6] text-white py-4 z-10 max-w-[1500px] mx-auto">
-            <label htmlFor="Navbar" className="btn ml-5 text-xl md:hidden flex w-fit ">
+            <label htmlFor="Navbar" className="btn ml-5 border-0 bg-gray-700 text-gray-50 text-xl md:hidden flex w-fit ">
                 <GiHamburgerMenu className='' />
             </label>
             <input type="checkbox" id="Navbar" className="modal-toggle" />
             <div className="modal modal-top rounded pt-16" role="dialog" >
-                <div className="modal-box ml-5 bg-[rgb(16 14 23/var(--tw-bg-opacity))]  left-0 w-fit">
+                <div className="modal-box bg-slate-800 ml-5 bg-[rgb(16 14 23/var(--tw-bg-opacity))]  left-0 w-fit">
                     {
                         navitems
                     }

@@ -1,10 +1,12 @@
 "use client"
-import emailjs from 'emailjs-com';
-import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
+import React, { useRef, useState } from 'react';
 import ContactCard from './ContactCard';
 import { FaLocationArrow, FaPhoneAlt } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Contact = () => {
     const contacts = [
 
@@ -24,38 +26,45 @@ const Contact = () => {
             infos: ["+8801571382855"]
         },
     ]
+    const [sending, setSending] = useState(false)
+
+    const form = useRef();
 
 
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: '',
-    });
 
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
+    const notify = () => toast.success("Email Sent");
+    const notifyerror = () => toast.error("Email not Sent");
     const handleSubmit = async (e) => {
         e.preventDefault();
-
-        console.log(formData);
-        const serviceID = 'service_wove9qh';
+        setSending(true)
+        const serviceID = 'service_06s20ic';
         const templateID = 'template_k1u9jno';
 
-        try {
-            // Send the email using EmailJS
-            await emailjs.send(serviceID, templateID, formData);
-            console.log('Email sent successfully!');
-            alert('Your message has been sent successfully!');
-        } catch (error) {
-            console.error('Error sending email:', error);
-            alert('Oops! Something went wrong. Please try again later.');
-        }
+
+        await emailjs
+            .sendForm(serviceID, templateID, form.current, {
+                publicKey: 'i9ExZKfc-QOAxI-j2',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                    form.current.reset();
+                    setSending(false)
+                    notify()
+
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                    setSending(false)
+                    notifyerror()
+                },
+            );
     };
 
     return (
         <div className="">
+            <ToastContainer />
+
             <h1 className='font-semibold text-center'>Contact Me</h1>
             <div className='flex flex-wrap justify-evenly gap-10 my-10'>
                 {
@@ -65,12 +74,19 @@ const Contact = () => {
                 }
 
             </div>
-            <form onSubmit={handleSubmit} className='flex mx-auto justify-between  flex-wrap w-full md:w-1/2 gap-5 mt-10'>
-                <input required type="text" placeholder="Your Good Name" name="name" value={formData.name} onChange={handleChange} className="input bg-transparent input-bordered input-info w-full " />
-                <input required placeholder="Email" type="email" name="email" value={formData.email} onChange={handleChange} className="input bg-transparent input-bordered input-info w-full " />
-                <textarea required placeholder="Your Message" name="message" value={formData.message} onChange={handleChange} className="textarea min-h-[200px] bg-transparent textarea-info textarea-bordered text w-full max "></textarea>
-                <input type="submit" className="btn btn-primary w-full" />
+            <form ref={form} onSubmit={handleSubmit} className='flex mx-auto justify-between  flex-wrap w-full md:w-1/2 gap-5 mt-10'>
+                <input required type="text" placeholder="Your Good Name" name="user_name" className="input bg-transparent input-bordered input-info w-full " />
+                <input required placeholder="Email" type="email" name="user_email" className="input bg-transparent input-bordered input-info w-full " />
+                <textarea required placeholder="Your Message" name="message" className="textarea min-h-[200px] bg-transparent textarea-info textarea-bordered text w-full max "></textarea>
+                {
+                    sending ?
+                        <div className="btn border-0 bg-blue-400 hover:bg-blue-500 w-full" >
+                            <span className="loading loading-spinner"></span>
+                            Sending
+                        </div> :
+                        <input type="submit" value="SEND" className="btn border-0 hover:bg-blue-400 bg-blue-400 w-full" />
 
+                }
             </form>
         </div>
     );
