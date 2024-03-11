@@ -8,33 +8,49 @@ const Technical_skills = [
     },
     {
         name: "Python",
-        percentage: 40
+        percentage: 65
     },
     {
         name: "Java",
         percentage: 80
     },
     {
+        name: "React js",
+        percentage: 90
+    },
+    {
+        name: "Next.js",
+        percentage: 70
+    },
+    {
         name: "Arduino",
-        percentage: 30
+        percentage: 60
     },
 ]
 const Professional_skills = [
     {
-        name: "Javascript",
-        percentage: 60
+        name: "Communication",
+        percentage: 90
     },
     {
-        name: "Python",
-        percentage: 40
+        name: "Team Work",
+        percentage: 100
     },
     {
-        name: "Java",
+        name: "Web Development",
+        percentage: 100
+    },
+    {
+        name: "App Development",
         percentage: 80
     },
     {
-        name: "Arduino",
-        percentage: 95
+        name: "Graphics Design",
+        percentage: 80
+    },
+    {
+        name: "UI Design",
+        percentage: 90
     },
 ]
 
@@ -58,17 +74,17 @@ const Skills = () => {
                     })
                 }
             </div>
-            <div className="w-96 mx-auto">
+            <div className="w-[26rem] mx-auto">
                 <h1 className='text-center my-5 font-semibold'>Professional Skills</h1>
-                <div className=" grid grid-cols-2">
+                <div className=" grid w-full grid-cols-2">
                     {
                         Professional_skills.map((skill, i) => {
 
                             return (
-                                <div key={i} className="lg:w-1/2 md:w-3/4 text-sm sm:w-full p-5 mx-auto flex flex-col items-center">
+                                <div key={i} className="lg:w-full md:w-3/4 text-sm sm:w-full py-5 mx-auto flex flex-col items-center">
 
                                     <div className="radial-progress text-primary" style={{ "--value": skill.percentage }} role="progressbar">{skill.percentage}%</div>
-                                    <p>{skill.name}</p>
+                                    <p className='my-2'>{skill.name}</p>
                                 </div>
                             )
                         })

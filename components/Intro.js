@@ -27,7 +27,7 @@ const Intro = () => {
                 <div className="w-fit mx-auto md:mx-0">
                     <a href='mailto:work.mahmudulhasan@gmail.com' className='w-[300px] text-sm flex items-center gap-3 my-3 mt-10'> <span className='text-xl'><IoMdMail /></span> work.mahmudulhasan@gmail.com</a>
                     <a href='tel:+8801571382855' className='w-[300px] text-sm flex items-center gap-3 my-3'><span className='text-xl'><FaPhone /></span>+8801571382855</a>
-                    <p className='w-[300px] text-sm flex items-center gap-3 my-3'><span className='text-xl'><FaLocationDot /></span>37, Pollsatnd, New York, United State</p>
+                    <p className='w-[300px] text-sm flex items-center gap-3 my-3'><span className='text-xl'><FaLocationDot /></span>Dhaka, Bangladesh</p>
                 </div>
                 <div className="mx-auto my-10 flex justify-evenly gap-5 text-[25px] w-full max-w-[300px]">
                     <a href="https://www.facebook.com/mahhasanbd" target="_blank"><FaFacebook /></a>

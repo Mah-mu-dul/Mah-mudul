@@ -5,14 +5,14 @@ const Education_card = () => {
         {
             degree: "Bsc. in Computer Science And Engineering ",
             institute: "Independent University, Bangladesh",
-            period: "2005-2008",
-            description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum"
+            period: "2022 - Running",
+            description: "Currently pursuing a BSc. in Computer Science and Engineering at Independent University, Bangladesh, fostering a passion for innovation and problem-solving in the dynamic realm of technology."
         },
         {
             degree: "Complete Web Development with REACT ",
             institute: "Programming Hero",
-            period: "2005-2008",
-            description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum"
+            period: "January to June 2022",
+            description: "I completed the Professional Course in Complete Web Development with React at Programming Hero from January to June 2022, honing my skills and expertise in building dynamic and responsive web applications with the latest technologies."
         },
 
 

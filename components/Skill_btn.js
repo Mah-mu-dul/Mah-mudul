@@ -1,5 +1,20 @@
 import React from 'react';
-const btns = ["PHP", "HTML", "CSS", "React", "Java Script", " Java"]
+const btns = [
+    "HTML5",
+    "CSS3",
+    "Tailwind",
+    "React",
+    "Java Script",
+    "Java",
+    "React Native",
+    "Next.js",
+    "Firebase",
+    "MongoDB",
+    "Node JS",
+    "Illustrator",
+    "Fussion 360",
+    "Visual Studio"
+]
 const Skill_btn = () => {
     return (
         <div className='flex flex-wrap gap-5 mt-8'>
