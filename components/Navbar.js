@@ -60,7 +60,7 @@ const Navbar = () => {
                 </div>
                 <label className="modal-backdrop" htmlFor="Navbar">Close</label>
             </div>
-            <ul className={` flex-wrap justify-center space-x-10 md:mx-auto sm:pr-20 md:pr-0  sm:bg-[#828088d6] md:bg-transparent rounded sm:py-5 md:py-0 sm:ml-5  w-fit hidden md:flex`}>
+            <ul className={` flex-wrap justify-center space-x-10 md:mx-auto sm:pr-20 md:pr-0  sm:bg-[#92bbf0e7] md:bg-transparent rounded sm:py-5 md:py-0 sm:ml-5  w-fit hidden md:flex`}>
                 {
                     navitems
                 }

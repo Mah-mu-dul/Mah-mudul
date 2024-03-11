@@ -80,11 +80,11 @@ const Contact = () => {
                 <textarea required placeholder="Your Message" name="message" className="textarea min-h-[200px] bg-transparent textarea-info textarea-bordered text w-full max "></textarea>
                 {
                     sending ?
-                        <div className="btn border-0 bg-blue-400 hover:bg-blue-500 w-full" >
+                        <div className="btn text-white border-0 bg-blue-400 hover:bg-blue-500 w-full" >
                             <span className="loading loading-spinner"></span>
                             Sending
                         </div> :
-                        <input type="submit" value="SEND" className="btn border-0 hover:bg-blue-400 bg-blue-400 w-full" />
+                        <input type="submit" value="SEND" className="btn text-white border-0 hover:bg-blue-400 bg-blue-400 w-full" />
 
                 }
             </form>

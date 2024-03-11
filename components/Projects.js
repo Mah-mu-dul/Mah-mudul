@@ -44,24 +44,24 @@ const Projects = () => {
     return (
         <div className="">
             <h1 className='text-center font-semibold'>Recent Projects</h1>
-            <div className='pt-10 p-5 space-y-8 space-x-0 lg:columns-3 md:columns-2 flex flex-wrap justify-evenly md:block w-fit  mx-auto '>
+            <div className='pt-10 space-y-8 space-x-0 lg:columns-3 md:columns-3 flex flex-wrap justify-evenly md:block w-fit  mx-auto '>
                 {
                     projects.map((project, i) => (
                         <div key={i} className="mx-auto  relative group overflow-hidden h-fit w-full md:w-fit">
-                            <img className='rounded-md w-full md:w-[200px] lg:w-[340px] h-auto ' src={project.img} alt="sds" />
-                            <div className="absolute mx-auto text-sm inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <img className='rounded-md w-full md:w-[250px] lg:w-[340px] h-auto ' src={project.img} alt="sds" />
+                            <div className="absolute  mx-auto text-sm inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 <div className="relative">
                                     <p className="text-white w-full bg-green-400">
                                         {/* <div className="absolute text-center  opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
                                             {project.h1}
                                         </div> */}
-                                        <div className="absolute text-center top-[-20px] left-[-20px] transform -translate-x-0 -translate-y-full p-2 transition-transform duration-500 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
+                                        <div className="absolute text-center top-[-20px] left-[-5px] transform -translate-x-0 -translate-y-full p-2 transition-transform duration-500 opacity-0 group-hover:opacity-100 group-hover:translate-y-0">
                                             <FaSearch />
                                         </div>
                                         {
                                             project.src &&
                                             <>
-                                                <div className="absolute text-center left-[-130px] transform -translate-x-full p-2 transition-transform duration-550 opacity-0 group-hover:opacity-100 group-hover:translate-x-0">
+                                                <div className="absolute text-center left-[-105px] transform -translate-x-full p-2 transition-transform duration-550 opacity-0 group-hover:opacity-100 group-hover:translate-x-0">
                                                     <a target='_blank' href={project.src}>
                                                         Source Code
                                                     </a>
@@ -71,7 +71,7 @@ const Projects = () => {
                                         {
                                             project.liveLink &&
                                             <>
-                                                <div className="absolute  right-[-100px] transform translate-x-full -translate-y-0 p-2 transition-transform duration-600 opacity-0 group-hover:opacity-100 group-hover:translate-x-0">
+                                                <div className="absolute  right-[-95px] transform translate-x-full -translate-y-0 p-2 transition-transform duration-600 opacity-0 group-hover:opacity-100 group-hover:translate-x-0">
                                                     <a target='_blank' href={project.liveLink}>
                                                         Live Site
                                                     </a>
