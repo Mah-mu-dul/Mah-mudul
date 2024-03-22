@@ -18,7 +18,7 @@ const ServiceCards = () => {
             logo: <FaCode />,
             color: "text-rose-500",
             title: "Web Development",
-            description: "Experienced web developer crafting cutting- edge digital experiences, blending creativity with functionality. Leveraging latest tech for high - performance websites tailored to your needs.Let's bring your vision online together."
+            description: "Experienced web developer crafting cutting- edge digital experiences, blending creativity with functionality. Leveraging latest tech for high - performance websites tailored to your needs. Let's bring your vision online together."
         },
         {
             logo: <TbApps />,
@@ -30,15 +30,15 @@ const ServiceCards = () => {
             logo: <SiAdobeillustrator />,
             color: "text-orange-500",
             title: "Graphics Design",
-            description: "With mastery in graphic design, I create captivating elements that elevate brand identities. Leveraging artistic flair and design principles, I ensure each creation resonates with purpose.Let's enrich your brand's visual storytelling together."
+            description: "With mastery in graphic design, I create captivating elements that elevate brand identities. Leveraging artistic flair and design principles, I ensure each creation resonates with purpose. Let's enrich your brand's visual storytelling together."
         },
     ]
     return (
-        <div className='flex flex-wrap justify-evenly mt-5'>
+        <div className='flex flex-wrap items-stretch  justify-evenly mt-5'>
             {
                 services.map((item, i) => {
                     return (
-                        < div key={i} className="w-full md:w-[270px] p-5 h-[300px] m-3 bg-[#202026] rounded-md shadow-[#000_0px_25px_50px_-12px]" >
+                        < div key={i} className="w-full md:w-[270px] p-5  m-3 bg-[#202026] rounded-md shadow-[#000_0px_25px_50px_-12px]" >
                             <span className={item.color}> {item.logo}</span>
                             <h2 className='my-2 text-[25px]'>{item.title}</h2>
                             <p className='text-sm text-justify'>{item.description}</p>

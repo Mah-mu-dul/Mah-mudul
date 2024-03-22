@@ -1,4 +1,3 @@
-"use client";
 
 import Image from 'next/image';
 import React from 'react';
@@ -6,8 +5,10 @@ import { FaPhone, FaLocationDot, FaFacebook, FaGithub, FaLinkedin } from "react-
 import { SiCodeforces } from "react-icons/si";
 
 import { IoMdMail } from "react-icons/io";
+import TypingEffect from './TypingEffect';
 
 const Intro = () => {
+    const professions = ['Web Developer', 'App Developer', 'Graphics Designer', 'UI/UX Designer'];
     return (
         <div className='w-full flex md:flex-row-reverse justify-evenly flex-wrap sm:mt-0 md:mt-0 text-center md:text-left'>
 
@@ -22,7 +23,7 @@ const Intro = () => {
             <div className="md:w-1/2 w-full ">
                 <button className='btn bg-blue-400 hover:bg-blue-500 border-0 rounded-r-full rounded-tl-full text-white text-2xl my-5 mt-8 '>Hello I&#39;m</button>
                 <h1 className='text-5xl font-semibold font-serif'>Mahmudul Hasan</h1>
-                <h3>Web Developer</h3>
+                <TypingEffect professions={professions} />
 
                 <div className="w-fit mx-auto md:mx-0">
                     <a href='mailto:work.mahmudulhasan@gmail.com' className='w-[300px] text-sm flex items-center gap-3 my-3 mt-10'> <span className='text-xl'><IoMdMail /></span> work.mahmudulhasan@gmail.com</a>
